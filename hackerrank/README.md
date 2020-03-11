@@ -1,22 +1,30 @@
-This repository is a collection of problems from hackerrank website and related tutorials for beginners in python. I have used these tutorials, and within a month, I learned most aspects of python. Hackerrank has a 30 days of Code tutorial problems which allows one to solve problems in any language. They have discussion forums and related tutorials. However, the tutorials are JAVA/C++ based and don't help much to learn python. Here, in this repository, I have created a list of links to problems (on hackerrank) and related tutorials from various resources on particular topics available on youtube. This rep is a work in progress
+This repository is a collection of problems from hackerrank website and related tutorials for beginners in python. I have used these tutorials, and within a month, I learned most aspects of python. Hackerrank has a 30 days of Code tutorial problems which allows one to solve problems in any language. They have discussion forums and related tutorials. However, the tutorials are JAVA/C++ based and don't help much to learn python. Here, in this repository, I have created a list of links to problems (on hackerrank) and related tutorials from various resources on particular topics available on youtube. This rep is a work in progress.
+
+Note: The tutorials for every problem can be found in this playlist: https://www.youtube.com/watch?v=NkHQTIVEEag
 
 0) Hello, World: https://www.hackerrank.com/challenges/30-hello-world/problem
 
 1) Data Types: https://www.hackerrank.com/challenges/30-data-types/problem
+Tutorial: https://www.youtube.com/watch?v=gCCVsvgR2KU
 
 2) Operators: https://www.hackerrank.com/challenges/30-operators/problem
 
 3) Intro to Conditional Statements: https://www.hackerrank.com/challenges/30-conditional-statements/problem
+Tutorial: https://www.youtube.com/watch?v=DZwmZ8Usvnk
 
-4) Class vs. Instance: https://www.hackerrank.com/challenges/30-class-vs-instance/problem
+4) Class vs. Instance: https://www.hackerrank.com/challenges/30-class-vs-instance/problem  
+Tutorial: https://www.youtube.com/watch?v=ZDa-Z5JzLYM
 
-5) Loops: https://www.hackerrank.com/challenges/30-loops/problem
+5) Loops: https://www.hackerrank.com/challenges/30-loops/problem  
+Tutorial: https://www.youtube.com/watch?v=6iF8Xb7Z3wQ
 
 6) Loop Review: https://www.hackerrank.com/challenges/30-review-loop/problem
 
-7) Arrays: https://www.hackerrank.com/challenges/30-arrays/problem
+7) Arrays: https://www.hackerrank.com/challenges/30-arrays/problem  
+Tutorial: https://www.youtube.com/watch?v=6a39OjkCN5I
 
-8) Dictionaries and Maps: https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem
+8) Dictionaries and Maps: https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem  
+Tutorial: https://www.youtube.com/watch?v=NkHQTIVEEag
 
 9) Recursion 3: https://www.hackerrank.com/challenges/30-recursion/problem
 
