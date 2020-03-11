@@ -1,6 +1,6 @@
 This repository is a collection of problems from hackerrank website and related tutorials for beginners in python. I have used these tutorials, and within a month, I learned most aspects of python. Hackerrank has a 30 days of Code tutorial problems which allows one to solve problems in any language. They have discussion forums and related tutorials. However, the tutorials are JAVA/C++ based and don't help much to learn python. Here, in this repository, I have created a list of links to problems (on hackerrank) and related tutorials from various resources on particular topics available on youtube. This rep is a work in progress.
 
-Note: The tutorials for every problem can be found in this playlist: https://www.youtube.com/watch?v=NkHQTIVEEag
+Note: The tutorials for every problem can be found in this playlist: https://www.youtube.com/watch?v=NkHQTIVEEag. I'd recommend to not use these as they basically show the solution to the problem, rather than actually teaching the concept.
 
 0) Hello, World: https://www.hackerrank.com/challenges/30-hello-world/problem
 
