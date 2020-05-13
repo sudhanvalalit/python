@@ -21,6 +21,7 @@ import numpy as np
 from scipy.integrate import odeint
 from scipy.interpolate import interp1d
 import pylab
+from scipy.interpolate import InterpolatedUnivariateSpline
 
 # constants
 msol = 1.116e60  # Mass of sun in MeV
@@ -51,7 +52,7 @@ class EoS:
     def energy_from_pressure(self, pressure):
         nidx = np.where(self.nb_in == 0.08)
         pcrust = self.p_in[nidx]
-        plow = 1e-14
+        plow = 1e-10
         if pressure < plow:
             return 2.6e-310
         elif pressure < pcrust:
@@ -83,6 +84,8 @@ class ToV(EoS):
     def __init__(self, filename, imax):
         super().__init__(filename)
         self.imax = imax
+        self.radius = np.empty(self.imax)
+        self.mass = np.empty(self.imax)
 
     def tov_rhs(self, initial, x):
         pres = initial[0]
@@ -120,7 +123,19 @@ class ToV(EoS):
         for i in range(self.imax):
             pc[i] = pmin + (pmax - pmin) * i / self.imax
             radius[i], mass[i] = self.tovsolve(pc[i], 10)
+        self.radius = radius
+        self.mass = mass
         return radius, mass
+
+    # @staticmethod
+    def rad14(self):
+        n1 = interp1d(self.mass, self.radius, axis=0, kind='cubic', fill_value='extrapolate')
+        r14 = n1(1.4)
+        # f = interp1d(self.radius, self.mass, axis=0, kind='cubic', fill_value='extrapolate')
+        Max_mass = np.max(self.mass)
+        nidx = np.where(self.mass == Max_mass)
+        Max_radius = self.radius[nidx]
+        return print("Radius of 1.4 M_sun star : {} \n Max_mass : {}, Max_radius: {}".format(r14, Max_mass, Max_radius))
 
 
 def plot(data, **kwargs):
@@ -144,7 +159,7 @@ def plot(data, **kwargs):
 
 def main():
     imax = 1000
-    file = ToV("neos1.dat", imax)
+    file = ToV("EoS-C.dat", imax)
     file.open_file()
     print(EoS.pressure_from_energy(file, 200), EoS.energy_from_pressure(file, 2.0))
     # print(type(file))
@@ -152,10 +167,10 @@ def main():
     mass = np.empty(imax)
     radius, mass = file.mass_radius(2., 1000.)
     data1 = np.array([radius, mass])
-    #print(radius, mass)
+    file.rad14()
     data = np.array(data1)
     labels = {'xlabel': 'radius (km)',
-              'ylabel': 'Mass (M$_{\circ}$)',
+              'ylabel': 'Mass (M$_{\odot}$)',
               'filename': 'Mass-Rad.pdf', 'title': 'Mass-Radius'}
     plot(data, **labels)
 
