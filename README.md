@@ -1,6 +1,6 @@
 # Python Repository:
 
-In this repository, I have put in working codes of my research, written in python. 
+In this repository, I have put in working codes of my research, written in python.
 Contents:
 1) Hacker rank -- list of problems on hackerrank website and video tutorials for these problems
 2) physics -- repository for codes used in my research

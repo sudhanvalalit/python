@@ -13,7 +13,7 @@ USE: To use the code, here are the steps:
 4) To plot, follow the code in main() on creating the dictionary of inputs
 
 Updates: Version 0.0.1-1
-Solves ToV, can only take inputs of pressure, energy density in MeV, baryon density in fm^-3
+Solves ToV, can only take inputs of pressure, energy density in MeV-fm^-3, baryon density in fm^-3
 in ascending order.
 '''
 
