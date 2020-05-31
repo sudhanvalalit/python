@@ -159,7 +159,7 @@ def plot(data, **kwargs):
 
 def main():
     imax = 1000
-    file = ToV("EoS-C.dat", imax)
+    file = ToV("neos1.dat", imax)
     file.open_file()
     print(EoS.pressure_from_energy(file, 200), EoS.energy_from_pressure(file, 2.0))
     # print(type(file))
