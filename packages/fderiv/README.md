@@ -11,5 +11,5 @@ fderiv.py
 $ pip install fderiv
  
 # Usage
-import fderiv as fd
+import fderiv as fd    	
 first-derivative, second-derivative = fd.fderiv(x, y)
