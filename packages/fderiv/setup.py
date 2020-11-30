@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="fderiv", # Replace with your own username
-    version="0.1.2",
+    version="1.0",
     author="Sudhanva Lalit",
     author_email="sudsid@gmail.com",
     description="Five point derivatives",

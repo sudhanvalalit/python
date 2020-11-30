@@ -11,5 +11,5 @@ fderiv.py
 $ pip install fderiv
  
 # Usage
-from fderiv import fderiv    
-first-derivative, second-derivative = fderiv.fd5pt(x, y)
+import fderiv as fd
+first-derivative, second-derivative = fd.fderiv(x, y)
