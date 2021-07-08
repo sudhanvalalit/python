@@ -7,7 +7,11 @@ Contents:
     a) TOV -- Tolmann-Oppenheimer-Volkov Equation solver for EoS from a data file. Sample EoS file and a plot are available as well.
     
 3) Packages (pip install package-name) -- python based packages
-    a) fderiv -- Five point derivative from Abramowitz-Stegun for arrays. Calculates first and second order derivatives.
+    1) fderiv -- Five point derivative from Abramowitz-Stegun for arrays. Calculates first and second order derivatives.
 
 4) Games:
-    a) Hangman (includes exe file)
+    1) Hangman (includes exe file)
+
+5) PyQt Apps:
+   1) Calculator
+   2) 
